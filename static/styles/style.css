@@ -1,0 +1,100 @@
+body{
+	background-color: olivedrab;
+    background-repeat: no-repeat;
+    color: lightskyblue;
+    text-align: center;
+    font-family: cursive;
+    height: 1500px;
+}
+label
+{
+	color: black;
+
+}
+.navigation
+{
+	background-color: navy;
+	width: 100%;
+	height: 50px;
+	opacity: 0.5;
+	size: auto;
+
+}
+.logo
+{
+	height: 50px;
+
+}
+a
+{
+	margin: 15px;
+}
+.hea
+{
+	border-radius: 20px ;
+}
+.dia{
+	border-radius: 20px;
+}
+.btn{
+	background-image: linear-gradient(90deg, #3F51B5, #2196F3);
+    border-radius: 100px;
+    color: white;
+    padding: 20px;
+    margin: 9px;
+    text-align: center;
+    padding: 10px;
+    size: auto;
+    width: 100px;
+    border: solid;
+}
+iframe
+{
+	margin: 10px;
+	margin-top: 100px;
+}
+.hea:hover
+{
+	border: grey;
+	
+}
+.dia:hover
+{
+	border: grey;
+	
+}
+.nav
+{
+	background-color: azure;
+}
+.acceptation
+{
+	background-color: navy;
+}
+.btn2{
+	background-image: linear-gradient(90deg, #3F51B5, #2196F3);
+    border-radius: 100px;
+    color: white;
+    padding: 20px;
+    margin: 4px;
+    text-align: center;
+    padding: 10px;
+    size: auto;
+    width: 100px;
+
+    
+}
+.caller
+{
+	text-decoration: none;
+	background-image: linear-gradient(blue,violet);
+	color: white;
+	border: solid;
+	border-radius: 30px;
+	padding: 30px;
+}
+.card1
+{
+	border: solid;
+	
+}
