@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+ <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+<header>
+    <div class="nav">
+    <nav class="navigation">
+        <form action="/">
+        <button class="btn2" type="submit">back</button>
+    </form>
+    </nav>
+</div>
+</header>
+<body>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-number">Heart disease</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">predict the probablity of heart disease
+        <br>
+        </h5>
+      </div>
+
+              <div class="row">
+    <form action='/predict' method="POST" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+            <label for="first_name"><b>age</b></label>
+            <br>
+          <input   id="first_name" name='age'type="number" class="validate">
+        </div>
+        <div class="input-field col s4">
+            <label for="first_name"><b>sex</b></label>
+            <br>
+          <input   id="first_name" name='sex'type="number" class="validate">
+        </div><div class="input-field col s4">
+            <label for="first_name"><b>cp</b></label>
+            <br>
+          <input   id="first_name" name='cp'type="number" class="validate">
+        </div><div class="input-field col s4">
+            <label for="first_name"><b>tresbps</b></label>
+            <br>
+          <input   id="first_name" name='tresbps'type="number" class="validate">
+        </div><div class="input-field col s4">
+            <label for="first_name"><b>chol</b></label>
+            <br>
+          <input   id="first_name" name='chol'type="number" class="validate">
+        </div><div class="input-field col s4">
+            <label for="first_name"><b>fbs</b></label>
+            <br>
+          <input   id="first_name" name='fbs'type="number" class="validate">
+        </div>
+        <div class="input-field col s4">
+            <label for="first_name"><b>restecg</b></label>
+            <br>
+          <input   id="first_name" name='restech'type="number" class="validate">
+        </div>
+        <div class="input-field col s4">
+            <label for="first_name"><b>thalach</b></label>
+            <br>
+          <input   id="first_name" name='thalach'type="number" class="validate">
+        </div><div class="input-field col s4">
+            <label for="first_name"><b>exang</b></label>
+            <br>
+          <input   id="first_name" name='exang'type="number" class="validate">
+        </div>
+        <div class="input-field col s4">
+
+          <label for="last_name"><b>oldpeak </b></label>
+            <br>
+          <input id="last_name"  name="oldpeak" type="number" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="_name"><b>slope</b></label>
+            <br>
+          <input id="_name" name="slope" type="number" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+            <label for="_name"><b>ca</b></label>
+            <br>
+          <input id="_name" name="ca" type="number" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+            <label for="_name"><b>thal</b></label>
+            <br>
+          <input id="_name" name="thal" type="number" class="validate">
+
+        </div>
+
+
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn">check</button>
+      </div>
+    </form>
+      </div>
+
+      <br><h4 align="center"<b>{{pred}}</b></h4>
+        <br>
+
+    </div>
+  </div>
+
+</body>
+<footer>
+     <div class="card1">
+        <iframe height="330" width="330" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.19729422625!2d77.41773181510597!3d23.199479484863826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43bc9994d78d%3A0x7a01333cf1304a82!2sBansal%20Hospital%20Bhopal!5e0!3m2!1sen!2sin!4v1680030766273!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a href="tel:07554086000" class="caller">call</a>
+    </div>
+    <div class="card1">
+     
+        <iframe height="330" width="330" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.2886900592334!2d77.30588201510713!3d23.268957684828823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c676cfee9f67d%3A0x6b7522bbea93dd93!2sChirayu%20Medical%20College%20%26%20Hospital!5e0!3m2!1sen!2sin!4v1680030801580!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a href="tel:07552709100" class="caller">call</a>
+    </div>
+    <div class="card1">
+     
+        <iframe height="330" width="330" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.538602088173!2d77.39023511510698!3d23.25987138483339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c681b0f664c0f%3A0xdc8f69cc6b507b8d!2sHamidia%20Hospital!5e0!3m2!1sen!2sin!4v1680030851090!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a href="tel:07554050450" class="caller">call</a>
+    </div>
+</footer>
+</html>
