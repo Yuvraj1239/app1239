@@ -8,15 +8,15 @@ model2=pickle.load(open('model2.pkl','rb'))
 @app.route("/")
 def hello_world():
     return render_template('index.html')
-@app.route("/diabetes")
+@app.route("/app1239/diabetes")
 def hello_world2():
     return render_template('diabetes.html')
-@app.route("/heart")
+@app.route("/app1239/heart")
 def hello_world3():
     return render_template('heart.html')
 
 
-@app.route("/predict",methods=['POST','GET'])
+@app.route("/app1239/predict",methods=['POST','GET'])
 def predict():
     int_features =[x for x in request.form.values()]
     final=[np.array(int_features)]
@@ -27,7 +27,7 @@ def predict():
         return render_template('heart.html',pred='you are heart patient')
     else:
         return render_template('heart.html',pred='you are not heart patient')
-@app.route("/predict2",methods=['POST','GET'])
+@app.route("/app1239/predict2",methods=['POST','GET'])
 def predict2():
     int_features2 =[x for x in request.form.values()]
     final2=[np.array(int_features2)]
